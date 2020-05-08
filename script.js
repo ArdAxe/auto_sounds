@@ -64,6 +64,7 @@ const pressPedal = () => {
 	
 	pedal.classList.add(`pressing`)
 	pedal_sound.play()
+	engine_rpm.style.width = `50%`
 	
 }
 
@@ -71,5 +72,6 @@ const freedPedal = () => {
 	
 	pedal.classList.remove(`pressing`)
 	pedal_sound.pause()
+	engine_rpm.style.width = `20%`
 	
 }

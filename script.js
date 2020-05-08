@@ -26,6 +26,7 @@ engine_btn.addEventListener(`click`, () => {
 		
 		// запускаем двигатель
 		engine_status = true
+		engine_btn.innerHTML = `stop`
 		
 		// включаем холостые обороты двигателя
 		engine_rpm.style.width = `20%`
@@ -43,6 +44,7 @@ engine_btn.addEventListener(`click`, () => {
 		
 		// глушим двигатель
 		engine_status = false
+		engine_btn.innerHTML = `start`
 		
 		// выключаем холостые обороты двигателя
 		engine_rpm.style.width = `0%`

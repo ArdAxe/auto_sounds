@@ -74,6 +74,7 @@ const freedPedal = () => {
 	
 	pedal.classList.remove(`pressing`)
 	pedal_sound.pause()
+	pedal_sound.currentTime = 0
 	engine_rpm.style.width = `20%`
 	
 }

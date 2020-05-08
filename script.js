@@ -46,6 +46,9 @@ engine_btn.addEventListener(`click`, () => {
 		engine_status = false
 		engine_btn.innerHTML = `start`
 		
+		// сбрасываем заклинившую педаль
+		freedPedal()
+		
 		// выключаем холостые обороты двигателя
 		engine_rpm.style.width = `0%`
 		engine_sound.pause()
@@ -57,6 +60,7 @@ engine_btn.addEventListener(`click`, () => {
 		// запрещаем отжатие педали
 		pedal.removeEventListener(`mouseup`, freedPedal)
 		pedal.removeEventListener(`touchend`, freedPedal)
+		
 		
 	}
 	
